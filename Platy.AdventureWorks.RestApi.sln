@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platy.AdventureWorks.RestApi", "src\Platy.AdventureWorks.RestApi\Platy.AdventureWorks.RestApi.csproj", "{D9E19D45-163C-4C72-BD4A-4AF9FC46F5D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F69B54C0-5FA2-4270-87FA-58E9A92A49FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6E2A8B12-5C57-4D90-A5AD-D1339CB6E9A5}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platy.AdventureWorks.RestApi.AppHost", "Platy.AdventureWorks.RestApi.AppHost\Platy.AdventureWorks.RestApi.AppHost.csproj", "{9A2E204E-605E-49EF-BEEC-CF7F197C5290}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platy.AdventureWorks.RestApi.ServiceDefaults", "Platy.AdventureWorks.RestApi.ServiceDefaults\Platy.AdventureWorks.RestApi.ServiceDefaults.csproj", "{70F61962-E335-4F26-8CBB-BCABD8E2A694}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9E19D45-163C-4C72-BD4A-4AF9FC46F5D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9E19D45-163C-4C72-BD4A-4AF9FC46F5D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9E19D45-163C-4C72-BD4A-4AF9FC46F5D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9E19D45-163C-4C72-BD4A-4AF9FC46F5D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A2E204E-605E-49EF-BEEC-CF7F197C5290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A2E204E-605E-49EF-BEEC-CF7F197C5290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A2E204E-605E-49EF-BEEC-CF7F197C5290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A2E204E-605E-49EF-BEEC-CF7F197C5290}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F61962-E335-4F26-8CBB-BCABD8E2A694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F61962-E335-4F26-8CBB-BCABD8E2A694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F61962-E335-4F26-8CBB-BCABD8E2A694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F61962-E335-4F26-8CBB-BCABD8E2A694}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D9E19D45-163C-4C72-BD4A-4AF9FC46F5D9} = {F69B54C0-5FA2-4270-87FA-58E9A92A49FC}
+		{9A2E204E-605E-49EF-BEEC-CF7F197C5290} = {F69B54C0-5FA2-4270-87FA-58E9A92A49FC}
+		{70F61962-E335-4F26-8CBB-BCABD8E2A694} = {F69B54C0-5FA2-4270-87FA-58E9A92A49FC}
+	EndGlobalSection
+EndGlobal
