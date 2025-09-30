@@ -41,8 +41,4 @@
       <ProjectReference Include="..\..\Platy.AdventureWorks.RestApi.ServiceDefaults\Platy.AdventureWorks.RestApi.ServiceDefaults.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Controllers\" />
-    </ItemGroup>
-
 </Project>
