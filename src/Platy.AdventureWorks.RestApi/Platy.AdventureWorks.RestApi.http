@@ -1,6 +1,12 @@
 @Platy.AdventureWorks.RestApi_HostAddress = http://localhost:5113
 
-GET {{Platy.AdventureWorks.RestApi_HostAddress}}/weatherforecast/
-Accept: application/json
+// Add a new address 
+POST {{Platy.AdventureWorks.RestApi_HostAddress}}/Address
+Content-Type: application/json
 
-###
+{
+  "Data": {
+    "AddressLine1": "Test 1",
+    "AddressLine2": "Test 2"
+  }
+}

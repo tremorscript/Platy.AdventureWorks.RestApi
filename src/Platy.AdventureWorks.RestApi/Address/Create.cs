@@ -1,18 +1,14 @@
-﻿using FastEndpoints;
+﻿using Ardalis.Result.AspNetCore;
 using Platy.AdventureWorks.Repository.Domain.Models;
 
 namespace Platy.AdventureWorks.RestApi.Address;
 
 
-public class Create : Endpoint<CreateAddressRequest, CreateAddressResponse>
+/// <summary>
+///  Creates a new Address
+/// </summary>
+public class Create(IAddressRepository repository) : Endpoint<CreateAddressRequest, CreateAddressResponse>
 {
-  private readonly AddressRepository _repository;
-
-  public Create(AddressRepository repository)
-  {
-    _repository = repository;
-  }
-   
   public override void Configure()
   {
     Post(CreateAddressRequest.Route);
@@ -26,8 +22,8 @@ public class Create : Endpoint<CreateAddressRequest, CreateAddressResponse>
       {
         Data = new AddressCreateModel()
         {
-         AddressID = 123,
          AddressLine1 = "123 address"
+         
         }
       };
     });
@@ -39,12 +35,15 @@ public class Create : Endpoint<CreateAddressRequest, CreateAddressResponse>
     CancellationToken cancellationToken)
   {
 
-    var result = await _repository.CreateAsync(request.Data, cancellationToken);
+    var result = await repository.CreateAsync(request.Data, cancellationToken);
 
     if (result.IsSuccess)
     {
       Response = new CreateAddressResponse(result.Value);
+      return;
     }
     // TODO: Handle other cases as necessary
+    
+    await SendResultAsync(result.ToMinimalApiResult());
   }
 }

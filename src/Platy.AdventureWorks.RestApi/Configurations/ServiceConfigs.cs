@@ -6,16 +6,20 @@ public static class ServiceConfigs
 {
   
   public static IServiceCollection AddServiceConfigs(this IServiceCollection services,
-    ILogger logger,
-    WebApplicationBuilder builder)
+    IConfiguration configuration)
   {
-    services.AddAdventureWorkDatabase(builder.Configuration.GetConnectionString("AdventureWorksDb"))
-      .AddMediatrConfigs();
+    var connectionString = configuration["AdventureWorksDb"];
+    if (string.IsNullOrEmpty(connectionString))
+    {
+      connectionString = Environment.GetEnvironmentVariable("ADVENTUREWORKSDB");
+    }
+
+    services.AddAdventureWorkDatabase(connectionString ?? string.Empty);
+    
+    services.AddMediatrConfigs();
 
     // add a default http client
     services.AddHttpClient("Default");
-
-    logger.LogInformation("{Project} services registered", "Core and Infrastructure services registered");
 
     return services;
   }

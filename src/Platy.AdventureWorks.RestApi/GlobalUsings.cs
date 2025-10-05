@@ -1,10 +1,9 @@
 ﻿global using System.Reflection;
-global using Ardalis.Result;
 global using Ardalis.SharedKernel;
 global using FastEndpoints;
 global using FastEndpoints.Swagger;
 global using MediatR;
-global using Microsoft.EntityFrameworkCore;
-global using Serilog;
-global using Serilog.Extensions.Logging;
 global using Platy.AdventureWorks.Repository;
+global using Platy.AdventureWorks.Logging;
+global using Platy.AdventureWorks.RestApi.Configurations;
+global using Microsoft.Extensions.DependencyInjection;

@@ -8,6 +8,7 @@
         <WebProjectMode>true</WebProjectMode>
         <OutputType>Exe</OutputType>
         <GenerateDocumentationFile>True</GenerateDocumentationFile>
+        <UserSecretsId>cbd8507e-7f3e-4f55-963b-1bbf9e24c26b</UserSecretsId>
     </PropertyGroup>
   
     <ItemGroup>
@@ -22,7 +23,7 @@
       <PackageReference Include="MediatR"/>
       <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson"/>
       <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" PrivateAssets="all"/>
-      <PackageReference Include="NimblePros.Metronome"/>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
       <PackageReference Include="NimblePros.SharedKernel"/>
       <PackageReference Include="Serilog.Sinks.ApplicationInsights"/>
       <PackageReference Include="Serilog.AspNetCore"/>
@@ -34,11 +35,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\..\Platy.AdventureWorks.RestApi.ServiceDefaults\Platy.AdventureWorks.RestApi.ServiceDefaults.csproj" />
+      <ProjectReference Include="..\Platy.AdventureWorks.Logging\Platy.AdventureWorks.Logging.csproj" />
     </ItemGroup>
 
 </Project>

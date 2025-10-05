@@ -1,0 +1,190 @@
+2025-10-05 12:08:19.625 +05:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-10-05 12:08:19.903 +05:30 [INF] Now listening on: http://localhost:5113
+2025-10-05 12:08:19.912 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-05 12:08:19.914 +05:30 [INF] Hosting environment: Development
+2025-10-05 12:08:19.918 +05:30 [INF] Content root path: D:\source\repos\tremorscript\Platy.AdventureWorks.RestApi\src\Platy.AdventureWorks.RestApi
+2025-10-05 12:08:39.087 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/ - null null
+2025-10-05 12:08:39.157 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-05 12:08:39.178 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/ - 404 0 null 118.6302ms
+2025-10-05 12:08:39.239 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5113/, Response status code: 404
+2025-10-05 12:08:43.682 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger - null null
+2025-10-05 12:08:43.711 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger - 404 0 null 31.296ms
+2025-10-05 12:08:43.751 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5113/swagger, Response status code: 404
+2025-10-05 12:08:48.600 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger - null null
+2025-10-05 12:08:48.610 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger - 404 0 null 9.7032ms
+2025-10-05 12:08:48.619 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5113/swagger, Response status code: 404
+2025-10-05 12:09:07.353 +05:30 [INF] Application is shutting down...
+2025-10-05 12:10:28.469 +05:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-10-05 12:10:28.768 +05:30 [INF] Now listening on: http://localhost:5113
+2025-10-05 12:10:28.775 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-05 12:10:28.778 +05:30 [INF] Hosting environment: Development
+2025-10-05 12:10:28.781 +05:30 [INF] Content root path: D:\source\repos\tremorscript\Platy.AdventureWorks.RestApi\src\Platy.AdventureWorks.RestApi
+2025-10-05 12:10:35.519 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/ - null null
+2025-10-05 12:10:35.549 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-05 12:10:35.558 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/ - 404 0 null 54.5319ms
+2025-10-05 12:10:35.585 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5113/, Response status code: 404
+2025-10-05 12:10:39.807 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger - null null
+2025-10-05 12:10:39.816 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger - 404 0 null 9.3568ms
+2025-10-05 12:10:39.826 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5113/swagger, Response status code: 404
+2025-10-05 12:10:43.204 +05:30 [INF] Application is shutting down...
+2025-10-05 12:11:43.674 +05:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-10-05 12:11:44.570 +05:30 [INF] Registered 1 endpoints in 1,284 milliseconds.
+2025-10-05 12:11:44.684 +05:30 [INF] No validators found in the system!
+2025-10-05 12:11:44.938 +05:30 [INF] Now listening on: http://localhost:5113
+2025-10-05 12:11:44.942 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-05 12:11:44.944 +05:30 [INF] Hosting environment: Development
+2025-10-05 12:11:44.946 +05:30 [INF] Content root path: D:\source\repos\tremorscript\Platy.AdventureWorks.RestApi\src\Platy.AdventureWorks.RestApi
+2025-10-05 12:11:56.003 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/ - null null
+2025-10-05 12:11:56.044 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-05 12:11:56.055 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-05 12:11:56.062 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/ - 404 0 null 79.9481ms
+2025-10-05 12:11:56.087 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5113/, Response status code: 404
+2025-10-05 12:11:58.539 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/ - null null
+2025-10-05 12:11:58.549 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/ - 404 0 null 11.5314ms
+2025-10-05 12:11:58.559 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5113/, Response status code: 404
+2025-10-05 12:12:10.834 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger - null null
+2025-10-05 12:12:10.854 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger - 302 0 null 20.0287ms
+2025-10-05 12:12:10.866 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/index.html - null null
+2025-10-05 12:12:11.003 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/index.html - 200 null text/html; charset=utf-8 137.1253ms
+2025-10-05 12:12:11.078 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/swagger-ui.css - null null
+2025-10-05 12:12:11.081 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/index.css - null null
+2025-10-05 12:12:11.082 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/swagger-ui-bundle.js - null null
+2025-10-05 12:12:11.083 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/swagger-ui-standalone-preset.js - null null
+2025-10-05 12:12:11.104 +05:30 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-10-05 12:12:11.112 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/index.css - 200 218 text/css 30.646ms
+2025-10-05 12:12:11.123 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-10-05 12:12:11.123 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-10-05 12:12:11.135 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/swagger-ui-standalone-preset.js - 200 230294 text/javascript 52.0885ms
+2025-10-05 12:12:11.135 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/swagger-ui.css - 200 152073 text/css 56.4629ms
+2025-10-05 12:12:11.144 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-10-05 12:12:11.159 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/swagger-ui-bundle.js - 200 1452754 text/javascript 77.0615ms
+2025-10-05 12:12:11.348 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/favicon-32x32.png - null null
+2025-10-05 12:12:11.356 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-10-05 12:12:11.360 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/favicon-32x32.png - 200 628 image/png 12.0064ms
+2025-10-05 12:12:11.485 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/v1/swagger.json - null null
+2025-10-05 12:12:12.097 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 611.7586ms
+2025-10-05 12:12:22.574 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/ - null null
+2025-10-05 12:12:22.580 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/ - 404 0 null 5.9592ms
+2025-10-05 12:12:22.586 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5113/, Response status code: 404
+2025-10-05 12:12:28.005 +05:30 [INF] Application is shutting down...
+2025-10-05 12:51:57.008 +05:30 [INF] Registered 1 endpoints in 1,457 milliseconds.
+2025-10-05 12:51:57.195 +05:30 [INF] No validators found in the system!
+2025-10-05 12:51:57.500 +05:30 [INF] Now listening on: http://localhost:5113
+2025-10-05 12:51:57.503 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-05 12:51:57.504 +05:30 [INF] Hosting environment: Development
+2025-10-05 12:51:57.507 +05:30 [INF] Content root path: D:\source\repos\tremorscript\Platy.AdventureWorks.RestApi\src\Platy.AdventureWorks.RestApi
+2025-10-05 12:52:15.567 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/ - null null
+2025-10-05 12:52:15.606 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-05 12:52:15.614 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/ - 404 0 null 61.1258ms
+2025-10-05 12:52:15.638 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5113/, Response status code: 404
+2025-10-05 12:52:20.526 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/ - null null
+2025-10-05 12:52:20.531 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/ - 404 0 null 7.2697ms
+2025-10-05 12:52:20.540 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5113/, Response status code: 404
+2025-10-05 12:52:26.007 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger - null null
+2025-10-05 12:52:26.023 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger - 302 0 null 16.0236ms
+2025-10-05 12:52:26.034 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/index.html - null null
+2025-10-05 12:52:26.174 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/index.html - 200 null text/html; charset=utf-8 140.3469ms
+2025-10-05 12:52:26.257 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/swagger-ui.css - null null
+2025-10-05 12:52:26.260 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/index.css - null null
+2025-10-05 12:52:26.261 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/swagger-ui-standalone-preset.js - null null
+2025-10-05 12:52:26.261 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/swagger-ui-bundle.js - null null
+2025-10-05 12:52:26.283 +05:30 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-10-05 12:52:26.293 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/index.css - 200 218 text/css 33.5592ms
+2025-10-05 12:52:26.333 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-10-05 12:52:26.333 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-10-05 12:52:26.387 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/swagger-ui-standalone-preset.js - 200 230294 text/javascript 126.7618ms
+2025-10-05 12:52:26.401 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/swagger-ui.css - 200 152073 text/css 144.7717ms
+2025-10-05 12:52:26.440 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-10-05 12:52:26.471 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/swagger-ui-bundle.js - 200 1452754 text/javascript 210.1058ms
+2025-10-05 12:52:26.696 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/favicon-32x32.png - null null
+2025-10-05 12:52:26.703 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-10-05 12:52:26.706 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/favicon-32x32.png - 200 628 image/png 10.258ms
+2025-10-05 12:52:26.749 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/v1/swagger.json - null null
+2025-10-05 12:52:26.784 +05:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-10-05 12:52:27.386 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 637.5002ms
+2025-10-05 12:52:39.033 +05:30 [INF] Application is shutting down...
+2025-10-05 12:53:17.212 +05:30 [INF] Registered 1 endpoints in 2,018 milliseconds.
+2025-10-05 12:53:17.792 +05:30 [INF] No validators found in the system!
+2025-10-05 12:53:18.384 +05:30 [INF] Now listening on: http://localhost:5113
+2025-10-05 12:53:18.389 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-05 12:53:18.399 +05:30 [INF] Hosting environment: Development
+2025-10-05 12:53:18.403 +05:30 [INF] Content root path: D:\source\repos\tremorscript\Platy.AdventureWorks.RestApi\src\Platy.AdventureWorks.RestApi
+2025-10-05 12:53:22.731 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/index.html - null null
+2025-10-05 12:53:22.977 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/index.html - 200 null text/html; charset=utf-8 274.0352ms
+2025-10-05 12:53:23.068 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/swagger-ui-standalone-preset.js - null null
+2025-10-05 12:53:23.092 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-10-05 12:53:23.096 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/swagger-ui-standalone-preset.js - 499 230294 text/javascript 31.7316ms
+2025-10-05 12:53:23.440 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/v1/swagger.json - null null
+2025-10-05 12:53:23.501 +05:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-10-05 12:53:24.321 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 880.5276ms
+2025-10-05 12:53:33.715 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/index.html - null null
+2025-10-05 12:53:33.723 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/index.html - 200 null text/html; charset=utf-8 8.7978ms
+2025-10-05 12:53:34.096 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/v1/swagger.json - null null
+2025-10-05 12:53:34.104 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 8.3354ms
+2025-10-05 12:53:38.995 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger - null null
+2025-10-05 12:53:39.002 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger - 302 0 null 7.5899ms
+2025-10-05 12:53:39.018 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/index.html - null null
+2025-10-05 12:53:39.026 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/index.html - 200 null text/html; charset=utf-8 8.5696ms
+2025-10-05 12:53:39.392 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5113/swagger/v1/swagger.json - null null
+2025-10-05 12:53:39.399 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5113/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 7.0354ms
+2025-10-05 13:22:15.455 +05:30 [INF] Registered 1 endpoints in 1,672 milliseconds.
+2025-10-05 13:22:15.714 +05:30 [INF] No validators found in the system!
+2025-10-05 13:22:15.915 +05:30 [INF] Now listening on: https://localhost:50187
+2025-10-05 13:22:15.916 +05:30 [INF] Now listening on: http://localhost:50189
+2025-10-05 13:22:15.922 +05:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-10-05 13:22:16.027 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-05 13:22:16.027 +05:30 [INF] Hosting environment: Development
+2025-10-05 13:22:16.027 +05:30 [INF] Content root path: D:\source\repos\tremorscript\Platy.AdventureWorks.RestApi\src\Platy.AdventureWorks.RestApi
+2025-10-05 13:24:33.791 +05:30 [INF] Registered 1 endpoints in 1,734 milliseconds.
+2025-10-05 13:24:34.013 +05:30 [INF] No validators found in the system!
+2025-10-05 13:24:34.090 +05:30 [INF] Now listening on: http://localhost:50279
+2025-10-05 13:24:34.090 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-05 13:24:34.090 +05:30 [INF] Hosting environment: Development
+2025-10-05 13:24:34.090 +05:30 [INF] Content root path: D:\source\repos\tremorscript\Platy.AdventureWorks.RestApi\src\Platy.AdventureWorks.RestApi
+2025-10-05 13:24:52.081 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5211/swagger - null null
+2025-10-05 13:24:52.135 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5211/swagger - 302 0 null 55.94ms
+2025-10-05 13:24:52.150 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5211/swagger/index.html - null null
+2025-10-05 13:24:52.271 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5211/swagger/index.html - 200 null text/html; charset=utf-8 122.226ms
+2025-10-05 13:24:52.575 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5211/swagger/swagger-ui.css - null null
+2025-10-05 13:24:52.580 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5211/swagger/index.css - null null
+2025-10-05 13:24:52.581 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5211/swagger/swagger-ui-bundle.js - null null
+2025-10-05 13:24:52.585 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5211/swagger/swagger-ui-standalone-preset.js - null null
+2025-10-05 13:24:52.595 +05:30 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-10-05 13:24:52.595 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5211/swagger/index.css - 200 218 text/css 14.8027ms
+2025-10-05 13:24:52.612 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-10-05 13:24:52.612 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-10-05 13:24:52.620 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5211/swagger/swagger-ui.css - 200 152073 text/css 45.593ms
+2025-10-05 13:24:52.620 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5211/swagger/swagger-ui-standalone-preset.js - 200 230294 text/javascript 34.8195ms
+2025-10-05 13:24:52.629 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-10-05 13:24:52.630 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5211/swagger/swagger-ui-bundle.js - 200 1452754 text/javascript 49.1416ms
+2025-10-05 13:24:52.840 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5211/swagger/favicon-32x32.png - null null
+2025-10-05 13:24:52.840 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-10-05 13:24:52.841 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5211/swagger/favicon-32x32.png - 200 628 image/png 1.3962ms
+2025-10-05 13:24:52.888 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5211/swagger/v1/swagger.json - null null
+2025-10-05 13:24:52.897 +05:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-10-05 13:24:53.521 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5211/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 632.4346ms
+2025-10-05 13:25:01.120 +05:30 [INF] Application is shutting down...
+2025-10-05 13:27:31.728 +05:30 [INF] Registered 1 endpoints in 1,896 milliseconds.
+2025-10-05 13:27:32.009 +05:30 [INF] No validators found in the system!
+2025-10-05 13:27:32.458 +05:30 [INF] Now listening on: https://localhost:50488
+2025-10-05 13:27:32.461 +05:30 [INF] Now listening on: http://localhost:50489
+2025-10-05 13:27:32.461 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-05 13:27:32.461 +05:30 [INF] Hosting environment: Development
+2025-10-05 13:27:32.462 +05:30 [INF] Content root path: D:\source\repos\tremorscript\Platy.AdventureWorks.RestApi\src\Platy.AdventureWorks.RestApi
+2025-10-05 13:27:41.571 +05:30 [INF] Application is shutting down...
+2025-10-05 13:54:45.292 +05:30 [INF] Registered 1 endpoints in 967 milliseconds.
+2025-10-05 13:54:45.431 +05:30 [INF] No validators found in the system!
+2025-10-05 13:54:45.630 +05:30 [INF] Now listening on: https://localhost:50789
+2025-10-05 13:54:45.631 +05:30 [INF] Now listening on: http://localhost:50791
+2025-10-05 13:54:45.632 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-05 13:54:45.632 +05:30 [INF] Hosting environment: Development
+2025-10-05 13:54:45.632 +05:30 [INF] Content root path: D:\source\repos\tremorscript\Platy.AdventureWorks.RestApi\src\Platy.AdventureWorks.RestApi
+2025-10-05 13:54:52.578 +05:30 [INF] Application is shutting down...
+2025-10-05 13:55:36.804 +05:30 [INF] Registered 1 endpoints in 1,052 milliseconds.
+2025-10-05 13:55:36.966 +05:30 [INF] No validators found in the system!
+2025-10-05 13:55:37.194 +05:30 [INF] Now listening on: https://localhost:50980
+2025-10-05 13:55:37.195 +05:30 [INF] Now listening on: http://localhost:50981
+2025-10-05 13:55:37.195 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-05 13:55:37.195 +05:30 [INF] Hosting environment: Development
+2025-10-05 13:55:37.195 +05:30 [INF] Content root path: D:\source\repos\tremorscript\Platy.AdventureWorks.RestApi\src\Platy.AdventureWorks.RestApi
+2025-10-05 13:58:21.363 +05:30 [INF] Application is shutting down...
