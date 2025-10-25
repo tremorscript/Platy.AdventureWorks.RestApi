@@ -28,4 +28,4 @@ jobs:
       - name: Build
         run: dotnet build Platy.AdventureWorks.RestApi.sln  --configuration Release
       - name: Test
-        run: dotnet test Platy.AdventureWorks.RestApi.sln
+        run: dotnet test Platy.AdventureWorks.RestApi.sln --configuration Release --no-build --no-restore
