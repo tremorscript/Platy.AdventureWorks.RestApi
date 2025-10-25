@@ -2,11 +2,12 @@
 
 namespace Platy.AdventureWorks.RestApi.Address;
 
-public class CreateAddressResponse 
+public class CreateAddressResponse
 {
   public CreateAddressResponse(AddressReadModel data)
   {
     Data = data;
   }
- public AddressReadModel Data { get; set; }
+
+  public AddressReadModel Data { get; set; }
 }

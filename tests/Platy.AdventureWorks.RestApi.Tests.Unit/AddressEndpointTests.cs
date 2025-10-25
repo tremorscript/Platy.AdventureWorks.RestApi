@@ -19,9 +19,9 @@ public class AddressEndpointTests
   public async Task Create_ValidAddress_ReturnsSuccess()
   {
     // Arrange
-    var createAddressRequest = new CreateAddressRequest()
+    var createAddressRequest = new CreateAddressRequest
     {
-      Data = new AddressCreateModel()
+      Data = new AddressCreateModel
       {
         AddressLine1 = "Test1",
         AddressLine2 = "Test2",
@@ -30,8 +30,8 @@ public class AddressEndpointTests
         PostalCode = "12345"
       }
     };
-    
-    var result = Result<AddressReadModel>.Success(new AddressReadModel()
+
+    var result = Result<AddressReadModel>.Success(new AddressReadModel
     {
       AddressLine1 = "Test1",
       AddressLine2 = "Test2",
@@ -53,6 +53,5 @@ public class AddressEndpointTests
     response.ShouldNotBeNull();
     response.Data.ShouldNotBeNull();
     response.Data.AddressLine1.ShouldBe("Test1");
-
   }
 }

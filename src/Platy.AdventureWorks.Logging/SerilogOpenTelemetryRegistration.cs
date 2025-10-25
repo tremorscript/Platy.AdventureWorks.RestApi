@@ -14,7 +14,7 @@ public static class SerilogOpenTelemetryRegistration
       .WriteTo.Console()
       .WriteTo.OpenTelemetry(options =>
       {
-        
+
         options.Endpoint = configuration["OTEL_EXPORTER_OTLP_ENDPOINT"];
         var headers = configuration["OTEL_EXPORTER_OTLP_HEADERS"]?.Split(',') ?? [];
         foreach (var header in headers)
@@ -40,10 +40,10 @@ public static class SerilogOpenTelemetryRegistration
         options.ResourceAttributes.Add(otelResourceAttribute, otelResourceAttributeValue);
       })
       .CreateLogger();*/
-    
+
     services.AddSerilog(config => config.ReadFrom.Configuration(configuration));
-    
+
     // logger.Information("{Project}", "Logging Configured");
-    return services; 
+    return services;
   }
 }

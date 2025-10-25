@@ -1,10 +1,7 @@
-﻿using ILogger = Microsoft.Extensions.Logging.ILogger;
-
-namespace Platy.AdventureWorks.RestApi.Configurations;
+﻿namespace Platy.AdventureWorks.RestApi.Configurations;
 
 public static class ServiceConfigs
 {
-  
   public static IServiceCollection AddServiceConfigs(this IServiceCollection services,
     IConfiguration configuration)
   {
@@ -15,7 +12,7 @@ public static class ServiceConfigs
     }
 
     services.AddAdventureWorkDatabase(connectionString ?? string.Empty);
-    
+
     services.AddMediatrConfigs();
 
     // add a default http client
@@ -23,5 +20,4 @@ public static class ServiceConfigs
 
     return services;
   }
-  
 }

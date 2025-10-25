@@ -2,12 +2,11 @@
 
 public static class MediatrConfig
 {
-  
   public static IServiceCollection AddMediatrConfigs(this IServiceCollection services)
   {
     var mediatRAssemblies = new[]
     {
-      Assembly.GetAssembly(typeof(AddressRepository)), // Core
+      Assembly.GetAssembly(typeof(AddressRepository)) // Core
     };
 
     services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(mediatRAssemblies!))

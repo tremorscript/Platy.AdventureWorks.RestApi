@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Logging;
+using Projects;
 using Testcontainers.Azurite;
 
 namespace Platy.AdventureWorks.RestApi.Tests.Integration.Tests;
@@ -7,10 +8,8 @@ public class IntegrationTest1 : IAsyncDisposable
 {
   private static readonly TimeSpan DefaultTimeout = TimeSpan.FromSeconds(30);
 
-  public AzuriteContainer AzuriteContainer { get; }
   public IntegrationTest1()
   {
-    
     AzuriteContainer = new AzuriteBuilder()
       .WithPortBinding(10003, 10000)
       .WithPortBinding(10004, 10001)
@@ -18,6 +17,13 @@ public class IntegrationTest1 : IAsyncDisposable
       .WithCleanUp(true)
       .WithAutoRemove(true)
       .Build();
+  }
+
+  public AzuriteContainer AzuriteContainer { get; }
+
+  public async ValueTask DisposeAsync()
+  {
+    await AzuriteContainer.DisposeAsync();
   }
   // Instructions:
   // 1. Add a project reference to the target AppHost project, e.g.:
@@ -28,41 +34,38 @@ public class IntegrationTest1 : IAsyncDisposable
   //
   // 2. Uncomment the following example test and update 'Projects.MyAspireApp_AppHost' to match your AppHost project:
   //
-  
+
   [Fact]
   public async Task GetWebResourceRootReturnsOkStatusCode()
   {
-      // Arrange
-      await AzuriteContainer.StartAsync().ConfigureAwait(false);
-      var cancellationToken = new CancellationTokenSource(DefaultTimeout).Token;
-      var appHost = await DistributedApplicationTestingBuilder.CreateAsync<Projects.Platy_AdventureWorks_RestApi_AppHost>(cancellationToken);
-      appHost.Services.AddLogging(logging =>
-      {
-          logging.SetMinimumLevel(LogLevel.Debug);
-          // Override the logging filters from the app's configuration
-          logging.AddFilter(appHost.Environment.ApplicationName, LogLevel.Debug);
-          logging.AddFilter("Aspire.", LogLevel.Debug);
-          // To output logs to the xUnit.net ITestOutputHelper, consider adding a package from https://www.nuget.org/packages?q=xunit+logging
-      });
-      appHost.Services.ConfigureHttpClientDefaults(clientBuilder =>
-      {
-          clientBuilder.AddStandardResilienceHandler();
-      });
-  
-      await using var app = await appHost.BuildAsync(cancellationToken).WaitAsync(DefaultTimeout, cancellationToken);
-      await app.StartAsync(cancellationToken).WaitAsync(DefaultTimeout, cancellationToken);
-  
-      // Act
-      var httpClient = app.CreateHttpClient("platy-adventureworks-restapi","platy-adventureworks-restapi");
-      await app.ResourceNotifications.WaitForResourceHealthyAsync("platy-adventureworks-restapi", cancellationToken).WaitAsync(DefaultTimeout, cancellationToken);
-      var response = await httpClient.GetAsync("/swagger", cancellationToken);
-  
-      // Assert
-      Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-  }
+    // Arrange
+    await AzuriteContainer.StartAsync();
+    var cancellationToken = new CancellationTokenSource(DefaultTimeout).Token;
+    var appHost =
+      await DistributedApplicationTestingBuilder.CreateAsync<Platy_AdventureWorks_RestApi_AppHost>(cancellationToken);
+    appHost.Services.AddLogging(logging =>
+    {
+      logging.SetMinimumLevel(LogLevel.Debug);
+      // Override the logging filters from the app's configuration
+      logging.AddFilter(appHost.Environment.ApplicationName, LogLevel.Debug);
+      logging.AddFilter("Aspire.", LogLevel.Debug);
+      // To output logs to the xUnit.net ITestOutputHelper, consider adding a package from https://www.nuget.org/packages?q=xunit+logging
+    });
+    appHost.Services.ConfigureHttpClientDefaults(clientBuilder =>
+    {
+      clientBuilder.AddStandardResilienceHandler();
+    });
 
-  public async ValueTask DisposeAsync()
-  {
-    await AzuriteContainer.DisposeAsync();
+    await using var app = await appHost.BuildAsync(cancellationToken).WaitAsync(DefaultTimeout, cancellationToken);
+    await app.StartAsync(cancellationToken).WaitAsync(DefaultTimeout, cancellationToken);
+
+    // Act
+    var httpClient = app.CreateHttpClient("platy-adventureworks-restapi", "platy-adventureworks-restapi");
+    await app.ResourceNotifications.WaitForResourceHealthyAsync("platy-adventureworks-restapi", cancellationToken)
+      .WaitAsync(DefaultTimeout, cancellationToken);
+    var response = await httpClient.GetAsync("/swagger", cancellationToken);
+
+    // Assert
+    Assert.Equal(HttpStatusCode.OK, response.StatusCode);
   }
 }

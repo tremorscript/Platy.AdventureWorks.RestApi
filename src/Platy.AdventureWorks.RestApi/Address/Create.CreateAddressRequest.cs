@@ -6,6 +6,6 @@ namespace Platy.AdventureWorks.RestApi.Address;
 public class CreateAddressRequest
 {
   public const string Route = "/Address";
-  
-  [Required] public AddressCreateModel Data { get; set; }
+
+  [Required] public AddressCreateModel Data { get; set; } = new AddressCreateModel();
 }

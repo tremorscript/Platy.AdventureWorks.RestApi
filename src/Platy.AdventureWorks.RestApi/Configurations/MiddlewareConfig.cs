@@ -2,8 +2,7 @@
 
 public static class MiddlewareConfig
 {
-   
-  public static async Task<IApplicationBuilder> UseAppMiddleware(this WebApplication app)
+  public static Task<IApplicationBuilder> UseAppMiddleware(this WebApplication app)
   {
     if (app.Environment.IsDevelopment())
     {
@@ -21,6 +20,6 @@ public static class MiddlewareConfig
     app.UseHttpsRedirection();
 
 
-    return app;
+    return Task.FromResult<IApplicationBuilder>(app);
   }
 }

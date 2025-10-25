@@ -1,5 +1,5 @@
-using Microsoft.Data.SqlClient;
 using Platy.AdventureWorks.Repository.Domain.Mapping;
+
 public partial class Program
 {
   public static async Task Main(string[] args)
@@ -10,7 +10,7 @@ public partial class Program
 
 // Add services to the container.
     builder.Services.AddSerilogOpenTelemetry(builder.Configuration);
-    builder.Services.AddAutoMapper(cfg => { }, typeof(AddressProfile)); 
+    builder.Services.AddAutoMapper(cfg => { }, typeof(AddressProfile));
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 //builder.Services.AddOpenApi();
     builder.Services.AddOptionConfigs();
@@ -32,8 +32,6 @@ public partial class Program
     {
       //app.MapOpenApi();
     }
-
-
 
 
     await app.UseAppMiddleware();
