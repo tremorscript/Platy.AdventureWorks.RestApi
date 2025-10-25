@@ -39,10 +39,8 @@ public class IntegrationTest1
       await app.StartAsync(cancellationToken).WaitAsync(DefaultTimeout, cancellationToken);
   
       // Act
+      var httpClient = app.CreateHttpClient("platy-adventureworks-restapi","platy-adventureworks-restapi");
       await app.ResourceNotifications.WaitForResourceHealthyAsync("platy-adventureworks-restapi", cancellationToken).WaitAsync(DefaultTimeout, cancellationToken);
-      var uri = app.GetEndpoint("platy-adventureworks-restapi");
-      var httpClient = new HttpClient();
-      httpClient.BaseAddress = uri;
       var response = await httpClient.GetAsync("/swagger", cancellationToken);
   
       // Assert
