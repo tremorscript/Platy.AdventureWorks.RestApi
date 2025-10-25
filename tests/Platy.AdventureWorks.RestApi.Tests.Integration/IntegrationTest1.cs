@@ -1,11 +1,24 @@
 using Microsoft.Extensions.Logging;
+using Testcontainers.Azurite;
 
 namespace Platy.AdventureWorks.RestApi.Tests.Integration.Tests;
 
-public class IntegrationTest1
+public class IntegrationTest1 : IAsyncDisposable
 {
   private static readonly TimeSpan DefaultTimeout = TimeSpan.FromSeconds(30);
 
+  public AzuriteContainer AzuriteContainer { get; }
+  public IntegrationTest1()
+  {
+    
+    AzuriteContainer = new AzuriteBuilder()
+      .WithPortBinding(10003, 10000)
+      .WithPortBinding(10004, 10001)
+      .WithPortBinding(10005, 10002)
+      .WithCleanUp(true)
+      .WithAutoRemove(true)
+      .Build();
+  }
   // Instructions:
   // 1. Add a project reference to the target AppHost project, e.g.:
   //
@@ -20,6 +33,7 @@ public class IntegrationTest1
   public async Task GetWebResourceRootReturnsOkStatusCode()
   {
       // Arrange
+      await AzuriteContainer.StartAsync().ConfigureAwait(false);
       var cancellationToken = new CancellationTokenSource(DefaultTimeout).Token;
       var appHost = await DistributedApplicationTestingBuilder.CreateAsync<Projects.Platy_AdventureWorks_RestApi_AppHost>(cancellationToken);
       appHost.Services.AddLogging(logging =>
@@ -45,5 +59,10 @@ public class IntegrationTest1
   
       // Assert
       Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+  }
+
+  public async ValueTask DisposeAsync()
+  {
+    await AzuriteContainer.DisposeAsync();
   }
 }
